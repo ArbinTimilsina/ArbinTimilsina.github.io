@@ -1,0 +1,240 @@
+  html, body {
+      font-family: 'Open Sans';
+      line-height: 1.2;
+      height: 100%;
+      background-color: #fff;
+      font-size: 16px;
+  }
+  
+  h2 {
+   font-weight: 600;
+   color:#777;
+  }
+
+  
+  /* nav */
+  .navbar {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 15px;
+      letter-spacing: 5px;
+      
+  }
+  .navbar-nav  li a:hover {
+      color: #00a0dc !important;
+  }
+  
+  .navbar-nav  li.active {
+      color: #00a0dc !important;
+  }
+  
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size:80%;
+    color:#00a0dc;
+} 
+
+
+.title {
+    color: #006890!important;
+    opacity: 1!important;
+    font-weight: 500;
+  }
+
+.twoCol {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+  }
+  
+/*Carousel*/
+.writing {
+    margin: 0 auto; 
+    width: 60%; 
+    padding: 40px 0px 100px 20%;
+    font-size: 1px!important;
+}
+
+.writing.long {
+    padding: 40px 0px 100px 12%;
+
+}
+#myCarousel {
+    margin: 0 auto;
+    width: 100%;
+  
+}
+
+ .item {
+      width: 100%; /* Set width to 100% */
+      height: 650px;
+      margin: auto;
+      }
+  
+  .carousel-control {
+   background-image:none !important;
+   filter:none !important;
+  }
+  
+  .glyphicon {
+  color: #00a0dc;!important;
+  }
+  
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+ 
+ 
+ /*contact*/
+ 
+ .form-horizontal .control-label{
+	margin-top: -10px;
+}
+
+ #myForm input, #myForm textArea {
+    border: 1px solid #00a0dc;
+  }
+  #myForm button {
+    border: 1px solid #00a0dc;
+  }
+  #myForm button:hover {
+      background-color: #00a0dc!important;
+      color: #fff;
+  }
+  
+/*footer*/
+  a.linkedin, a.github, a.twitter {
+  	color: #00a0dc;
+  }
+  a.linkedin:hover {
+  	color: #000000;
+  }
+  a.github:hover {
+    color: #000000;
+  }
+  a.twitter:hover {
+  	color: #000000;
+  }
+
+ /*responsive*/
+
+  @media screen and (max-width: 1300px) {
+   #home div.row, #research div.row, #everest div.row {
+    	  font-size: 16x!important;
+   }
+}
+
+ @media screen and (max-width: 950px) {
+   #home div.row, #writings div.row  div.writing, #research div.row, #everest div.row {
+    	  font-size: 15px!important;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.navbar-nav>li {
+	position: relative;
+	float: none!important;
+	display:block!important;
+	margin: 10px auto;
+}
+
+.navbar-toggle {
+  margin-right: 15px!important;
+  display: block;
+}
+
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.navbar .container {
+ width: 100%;
+}
+
+.navbar-collapse {
+    border-top: 1px solid #e5e5e5;
+    margin:0;
+}
+
+.navbar-collapse.collapse {
+	display: none !important;
+}
+
+.navbar-collapse.collapse.in {
+	display: block !important;
+}
+
+.navbar-header {
+        float:none!important;
+    }
+}
+
+/*dialog-box*/
+
+.ui-dialog {
+    border-radius: 6px 6px 0 0!important;
+    padding: 0!important;
+    font-size: 0.75em !important;
+}
+
+.ui-dialog-titlebar {
+  border-radius: 6px 6px 0 0!important;
+  background-image: none!important;
+  background-color: #00a0dc!important;
+  margin: 0!important;
+} 
+
+.ui-dialog-title {
+	color: #fff!important;
+}
+
+
+.ui-dialog-titlebar-close  {
+color: #fff!important;
+background-color: #00a0dc!important;
+border: none!important;
+padding-top: -10px;
+}
+
+  
+
+

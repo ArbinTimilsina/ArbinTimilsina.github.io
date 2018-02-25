@@ -9,14 +9,13 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
    </head>
    <!-- The scrollable area -->
 <style>
-  #home, #research, #writings, #everest, #contact {padding-top: 60px; margin:15px;}
+  #home, #research, #writings, #everest, #contact {padding: 60px 15px; }
   .carousel-content {
     color:black;
     display:flex;
@@ -29,7 +28,8 @@
   vertical-align:middle;
   padding: 50px;
 }
-img.earth {width:auto; height:500px; margin: 0 auto;}
+img.earth {width:500px; height:auto; margin: 0 auto;}
+.row {margin:}
 </style>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -85,22 +85,24 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
 <!-------------------------------><!------------------------------->
 </div>
 
-
 <div id="research">
   <h2>Research</h2>
+  	<div class="row">
+   		<div class="col-sm-12">
+   			<img src="Include/Research/GaussianBlue.png" class="img-responsive" style="height:auto; width:50%; display:block; margin:auto;" alt="Gaussian" >
+  		</div>
+  	</div>
   <div class="row">
-   <div class="col-sm-12">
-   	<img src="Include/Research/GaussianBlue.png" class="img-responsive" style="height:auto; width:50%; display:block; margin:auto;" alt="Gaussian" >
-  </div>
-  </div>
-   <div class="row">
-   <div class="col-sm-6">
-    <img src="Include/Research/Arbin.png" class="img-responsive" style="width:100%" alt="Arbin">
-  </div>
-   <div class="col-sm-6">
-            I'm a Postdoctoral Research Associate at Brookhaven National Laboratory (BNL) and I participate in the activities of the Electronic Detector Group (EDG) in the Physics Department as a member of the Deep Underground Neutrino Experiment (DUNE) and Short-Baseline Near Detector (SBND). I am currently interested in neutrino physics and building new Convolutional Neural Networks (CNN) techniques for particle identification using 3D images of particle trajectories from data collected by Liquid Argon Time Projection Chamber (LAr TPC).  </div>
-  </div>
-         <div class="row" style="margin-top: 30px; padding: 0 30px;">
+   	<div class="col-sm-6">
+    	<img src="Include/Research/Arbin.png" class="img-responsive" style="width:100%" alt="Arbin">
+  	</div>
+    <div class="col-sm-6">
+   		I'm a Postdoctoral Research Associate at Brookhaven National Laboratory (BNL) and I participate in the activities of the Electronic Detector Group (EDG) in the Physics Department as a member of the Deep Underground Neutrino Experiment (DUNE) and Short-Baseline Near Detector (SBND). 
+   		I am currently interested in neutrino physics and building new Convolutional Neural Networks (CNN) techniques for particle identification using 3D images of particle trajectories from data collected by Liquid Argon Time Projection Chamber (LAr TPC).  
+   	</div>
+  	</div>
+    <div class="row" style="margin-top: 30px;">
+         <div class="col-sm-12">
             <p>
             I received my B.S. degree in Physics from Minnesota State University, Mankato and a Ph.D degree in Nuclear Physics from Iowa State University. My graduate research work focused on studying Quantum Chromodynamics (QCD) through matter under extreme conditions using the PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) at BNL. My expertise was in studying jet production to determine the nature of the hot, dense nuclear matter, called quark-gluon plasma (QGP), produced in the relativistic heavy ion collisions. My Ph.D research work has been awarded Research Excellence Award by Iowa State University in recognition of the outstanding research accomplishment in a graduate program, and my Ph.D dissertation has been awarded the RHIC and AGS Thesis Award in recognization of the most outstanding thesis related to research conducted at BNL's facilities.
             </p>
@@ -111,13 +113,14 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
             <a href="https://inspirehep.net/author/profile/A.Timilsina.1" target="_blank">INSPIRE</a>.
             </p>
          </div>
-         
-          <div id="everest">
+         </div>
+  </div>
+<div id="everest">
           <h2>Once On Everest</h2>
          <div class="container-fluid bg-1" style="padding: 0; ">
             <img src="Include/OnceOnEverest/Everest.jpg" class="img-responsive" style="height:100%; width:100%; display:block; margin:auto;" alt="Everest" >
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell first-cell">
                <img src="Include/OnceOnEverest/1.jpg" class="img-responsive margin" style="width:100%" alt="">
             </div>
@@ -130,7 +133,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </p>
             </div>
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell  text-left">
                <p>
                   Although I knew nothing about climbing, I was determined; after all, my backyard was Annapurna Mountain Range. I started seeking information and help; wrote letters to everyone I could think of (even the king).
@@ -140,7 +143,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                <img src="Include/OnceOnEverest/2.jpg" class="img-responsive margin" style="width:100%" alt="">                    
             </div>
          </div>
-         <div class="row bg-3 table-row" style="padding: 30px;">
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell first-cell">
                <img src="Include/OnceOnEverest/3.jpg" class="img-responsive margin" style="width:100%" alt="">
             </div>
@@ -153,7 +156,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </p>
             </div>
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell text-left">
                <p>
                   1997. My school, Kumudini Homes, stepped up to support any financial or time-management challenges. Nepal Mountaineering Association promised to include me in their training.            
@@ -166,7 +169,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                <img src="Include/OnceOnEverest/4.jpg" class="img-responsive margin" style="width:100%" alt="">                    
             </div>
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell">
                <img src="Include/OnceOnEverest/5.jpg" class="img-responsive margin" style="width:100%" alt="">
             </div>
@@ -176,7 +179,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </p>
             </div>
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell text-left">
                <p>
                   By the end of the course, I was physically, emotionally, and mentally ready for Everest.  
@@ -186,7 +189,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                <img src="Include/OnceOnEverest/6.jpg" class="img-responsive margin" style="width:100%" alt="">                    
             </div>
          </div>
-         <div class="row" style="padding: 30px;">
+         <div class="row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell" >
                <img src="Include/OnceOnEverest/7.jpg" class="img-responsive margin" style="width:100%" alt="">
             </div>
@@ -208,7 +211,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
             </figure>
             <p class="text-center">The expedition officially lasted from March 27 to May 15, 1999. Acclimatization is the key to a successful climb. By the end of April, I had spent few days at camp II multiple times, slept a night at camp III without oxygen, and hiked below base camp for a proper rest. We were ready for the submit, but the weather conditions determine the day for submit attemp. The first week of May was looking ideal.</p>
          </div>
-         <div class="row bg-3 table-row" style="padding: 30px;">
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell first-cell  text-left">
                <p>
                   On May 2 we left base camp for the summit attempt and reached camp II. On May 3 and 4 we reached camp III and IV, respectively. On the night of May 4, we left camp IV for the submit.  
@@ -221,7 +224,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </figure>
             </div>
          </div>
-         <div class="row bg-3 table-row" style="padding: 30px;">
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell first-cell">
                <img src="Include/OnceOnEverest/9.jpg" class="img-responsive margin" style="width:100%" alt="">
             </div>
@@ -237,7 +240,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </p>
             </div>
          </div>
-         <div class="row bg-3 table-row" style="padding: 30px;">
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell first-cell  text-left">
                <p>
                   After returning to camp IV, I suffered from snow blindness. I could barely see and the pain was excruciating. Tragically, we had left all our medical supply at camp II. The next day, I had to literally crawl my way down to camp II.   
@@ -250,7 +253,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
                </figure>
             </div>
          </div>
-         <div class="row bg-3 table-row" style="padding: 30px;">
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
             <div class="col-sm-6 table-cell">
                <img src="Include/OnceOnEverest/11.jpg" class="img-responsive" style="width:100%" alt="">   		
             </div>
@@ -281,7 +284,7 @@ img.earth {width:auto; height:500px; margin: 0 auto;}
          <div id="text-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
     <!-- Wrapper for slides -->
     <div class="row">
-        <div class="col-xs-offset-5 col-xs-5">
+        <div style="width:300px; margin:0 auto;">
             <div class="carousel-inner">
                 <div class="item active">
                     <div class="carousel-content">

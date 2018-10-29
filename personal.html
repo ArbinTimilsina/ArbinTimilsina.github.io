@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Arbin Timilsina</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   </head>
+   <!-- The scrollable area -->
+<style>
+  #home, #research, #writings, #everest, #contact {padding: 60px 15px; }
+  .carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: 500px;
+  vertical-align:middle;
+  padding: 50px;
+}
+img.earth {width:500px; height:auto; margin: 0 auto;}
+.row {margin:}
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+ <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                  <li><a href="#everest">ONCE ON EVEREST</a></li>
+                  <li><a href="#writings">WRITINGS</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+<!-- Section 1 -->
+<div id="home" style="background-color:white;">
+  <h2>Home</h2>
+   <img src="Include/Home/Earth2.jpg" class="img-responsive earth" alt="Earth" >
+
+<!-- Footer -->
+<footer class="container-fluid bg-black text-center" style="padding: 20px; auto ">
+    <p>
+    <span class="fa-stack fa-lg">
+        <a href="https://www.linkedin.com/in/arbint" class="linkedin" target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x"></i>
+        </a>
+    </span>
+    <span class="fa-stack fa-lg">
+        <a href="https://twitter.com/ArbinTimilsina" class="twitter" target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+        </a>
+    </span>
+    <span class="fa-stack fa-lg">
+        <a href="https://github.com/ArbinTimilsina" class="github"  target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x"></i>
+        </a>
+    </span>
+    </p>
+</footer>
+<!-------------------------------><!------------------------------->
+</div>
+
+<div id="research">
+  <h2>Research</h2>
+  	<div class="row">
+   		<div class="col-sm-12">
+   			<img src="Include/Research/GaussianBlue.png" class="img-responsive" style="height:auto; width:50%; display:block; margin:auto;" alt="Gaussian" >
+  		</div>
+  	</div>
+  <div class="row">
+   	<div class="col-sm-6">
+    	<img src="Include/Research/Arbin.png" class="img-responsive" style="width:100%" alt="Arbin">
+  	</div>
+    <div class="col-sm-6">
+   		I'm a Postdoctoral Research Associate at Brookhaven National Laboratory (BNL) and I participate in the activities of the Electronic Detector Group (EDG) in the Physics Department as a member of the Deep Underground Neutrino Experiment (DUNE) and Short-Baseline Near Detector (SBND).
+   		I am currently interested in neutrino physics and building new Convolutional Neural Networks (CNN) techniques for particle identification using 3D images of particle trajectories from data collected by Liquid Argon Time Projection Chamber (LAr TPC).
+   	</div>
+  	</div>
+    <div class="row" style="margin-top: 30px;">
+         <div class="col-sm-12">
+            <p>
+            I received my B.S. degree in Physics from Minnesota State University, Mankato and a Ph.D. degree in Nuclear Physics from Iowa State University. My graduate research work focused on studying Quantum Chromodynamics (QCD) through matter under extreme conditions using the PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) at BNL. My expertise was in studying jet production to determine the nature of the hot, dense nuclear matter, called quark-gluon plasma (QGP), produced in the relativistic heavy ion collisions. My Ph.D. research work has been awarded Research Excellence Award by Iowa State University in recognition of the outstanding research accomplishment in a graduate program, and my Ph.D. dissertation has been awarded the RHIC and AGS Thesis Award in recognization of the most outstanding thesis related to research conducted at BNL's facilities.
+            </p>
+            <p>
+               You can find my dissertation <a href="https://lib.dr.iastate.edu/etd/15170/" target="_blank">here</a>.
+            </p>
+            <p> You can find the list of my publications and citations summary on
+            <a href="https://inspirehep.net/author/profile/A.Timilsina.1" target="_blank">INSPIRE</a>.
+            </p>
+
+	    <h3>Below are some of my Machine Learning related projects:</h3>
+	    <ul>
+	      <li><a href="https://github.com/ArbinTimilsina/PredictingAgeFromX-Rays" target="_blank">Bone Age Assessment:</a>  Determination of the age of a child using different CNN architectures by utilizing x-rays of hands (pediatric hand radiographs).</li>
+	      <li><a href="https://github.com/ArbinTimilsina/MachineLearning/tree/master/DogProject" target="_blank">Dog Bread Identification:</a> Identification of dog breeds using CNN from scratch as well as using transfer learning (using Inception-v3 bottleneck features).</li>
+	      <li><a href="https://github.com/ArbinTimilsina/MachineLearning/tree/master/SmartCab" target="_blank">Smart Cab:</a> Use of reinforcement learning techniques for a Q-Learning agent in a simplified world to aid it to both safely and efficiently reach its destinations.</li>
+	    </ul>
+         </div>
+         </div>
+  </div>
+<div id="everest">
+          <h2>Once On Everest</h2>
+         <div class="container-fluid bg-1" style="padding: 0; ">
+            <img src="Include/OnceOnEverest/Everest.jpg" class="img-responsive" style="height:100%; width:100%; display:block; margin:auto;" alt="Everest" >
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell first-cell">
+               <img src="Include/OnceOnEverest/1.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell second-cell text-left" >
+               <p>
+                  1993. I was nine years old. Pasang Lhamu Sherpa had become the first Nepalese woman to summit Mount Everest. She was not able to make it home but her conquest inspired me to do something big.
+               </p>
+               <p>
+                  It all started with a simple thought 'maybe I can be the youngest person to climb Everest'.
+               </p>
+            </div>
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell  text-left">
+               <p>
+                  Although I knew nothing about climbing, I was determined; after all, my backyard was Annapurna Mountain Range. I started seeking information and help; wrote letters to everyone I could think of (even the king).
+               </p>
+            </div>
+            <div class="col-sm-6  table-cell" >
+               <img src="Include/OnceOnEverest/2.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell first-cell">
+               <img src="Include/OnceOnEverest/3.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell second-cell text-left" >
+               <p>
+                  "What better place than here, what better time than now?"- RATM
+               </p>
+               <p>
+                  I started waking up at 4 am to hike up a hill near my home before heading to school. My rucksack was empty in the beginning; it got up to 50 lb within a year.
+               </p>
+            </div>
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell text-left">
+               <p>
+                  1997. My school, Kumudini Homes, stepped up to support any financial or time-management challenges. Nepal Mountaineering Association promised to include me in their training.
+               </p>
+               <p>
+                  I started going places. I started to learn climbing techniques.
+               </p>
+            </div>
+            <div class="col-sm-6  table-cell" >
+               <img src="Include/OnceOnEverest/4.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell">
+               <img src="Include/OnceOnEverest/5.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell text-left" >
+               <p>
+                  1998. As a part of an Advanced Mountaineering Course, I spent 35 days at the Paldor Peak (19,344 ft) learning various mountaineering techniques with 4 professional instructors.
+               </p>
+            </div>
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell text-left">
+               <p>
+                  By the end of the course, I was physically, emotionally, and mentally ready for Everest.
+               </p>
+            </div>
+            <div class="col-sm-6  table-cell" >
+               <img src="Include/OnceOnEverest/6.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+         </div>
+         <div class="row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell" >
+               <img src="Include/OnceOnEverest/7.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell text-left" >
+               <p>
+                  Climbing Everest is expensive. With determination not to accept sponsorship from tobacco or alcohol companies, my mother called a meeting with community members of my hometown Pokhara. A committee was formed during the meeting to raise and manage funds for the expedition.
+               </p>
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding: 20px;">
+            <img src="Include/OnceOnEverest/WithKing.gif" class="img-responsive margin" style="width:20%; margin: 20px auto;" alt="">
+            <p class="text-center">The expedition received overwhelming support; from school students chipping in their lunch money to local businessmen writing personal checks.</p>
+            <p class="text-center">Even late King Birendra granted us an audience to boost our morale.</p>
+         </div>
+         <div class="row bg-3 table-row" style="padding: 20px;">
+            <figure>
+               <img src="Include/OnceOnEverest/7.5.jpg" class="img-responsive margin" style="width:50%; margin: 20px auto;" alt="">
+               <figcaption>Picture: View of the base camp setup from my tent.</figcaption>
+            </figure>
+            <p class="text-center">The expedition officially lasted from March 27 to May 15, 1999. Acclimatization is the key to a successful climb. By the end of April, I had spent few days at camp II multiple times, slept a night at camp III without oxygen, and hiked below base camp for a proper rest. We were ready for the submit, but the weather conditions determine the day for submit attemp. The first week of May was looking ideal.</p>
+         </div>
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell first-cell  text-left">
+               <p>
+                  On May 2 we left base camp for the summit attempt and reached camp II. On May 3 and 4 we reached camp III and IV, respectively. On the night of May 4, we left camp IV for the submit.
+               </p>
+            </div>
+            <div class="col-sm-6  table-cell second-cell" >
+               <figure>
+                  <img src="Include/OnceOnEverest/8.jpg" class="img-responsive margin" style="width:100%" alt="">
+                  <figcaption>Picture: Me and my team members leaving base camp for the summit bid.</figcaption>
+               </figure>
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell first-cell">
+               <img src="Include/OnceOnEverest/9.jpg" class="img-responsive margin" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell second-cell text-left" >
+               <p>
+                  May 5, 1999, 11:30 am. At the height of 8,750 meters, just 98 meters below the summit, I was informed that we were running out of oxygen. We had enough to take us to the summit but the remaining amount didn't guarantee our safe return to camp IV.
+               </p>
+               <p>
+                  To climb or not to climb?
+               </p>
+               <p>
+                  With four lives at stake, there was no question; we descended.
+               </p>
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell first-cell  text-left">
+               <p>
+                  After returning to camp IV, I suffered from snow blindness. I could barely see and the pain was excruciating. Tragically, we had left all our medical supply at camp II. The next day, I had to literally crawl my way down to camp II.
+               </p>
+            </div>
+            <div class="col-sm-6  table-cell second-cell" >
+               <figure>
+                  <img src="Include/OnceOnEverest/10.jpg" class="img-responsive margin" style="width:100%" alt="">
+                  <figcaption>Picture: At camp II after the medication had kicked in.</figcaption>
+               </figure>
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding-top: 30px;">
+            <div class="col-sm-6 table-cell">
+               <img src="Include/OnceOnEverest/11.jpg" class="img-responsive" style="width:100%" alt="">
+            </div>
+            <div class="col-sm-6  table-cell second-cell text-left" >
+               <p>
+                  May 7. Finally, safely at the base camp.
+               </p>
+               <p>
+                  It was time to pack-up and leave, and all I could think of was some fresh fried chickens.
+               </p>
+            </div>
+         </div>
+         <div class="row bg-3 table-row" style="padding: 20px;">
+            <figure>
+            	<img src="Include/OnceOnEverest/12.jpg" class="img-responsive margin" style="width:40%; margin: 20px auto;" alt="">
+            	<figcaption style="font-size:150%; color:#003346;">Back home!</figcaption>
+            	<figcaption>Picture: With mum at the Kathmandu airport.</figcaption>
+            </figure>
+         </div>
+      </div>
+      <!-- Writings -->
+      <!----------------------------------------------------------------------------------------------------------------------------->
+      <div id="writings">
+      <h2>Writings</h2>
+         <div class="container-fluid bg-3" style="padding:0;">
+            <img src="Include/Writings/Alive.jpg" class="img-responsive" style="height:auto; width:50%; display:block; margin:auto;" alt="Home" >
+         </div>
+         <div id="text-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+    <!-- Wrapper for slides -->
+    <div class="row">
+        <div style="width:300px; margin:0 auto;">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div>
+                        	<p>
+                        	<h3>through the awareness</h3>
+
+                           let me play a little more<br>
+                           i swear<br>
+                           and then<br>
+                           i will go
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+ 							<p>
+ 							<h2>now here </h2>
+
+                           we jumped on a boat, i started to row<br>
+                           she hurried, asked<br>
+                           where shall we go?<br><br>
+                           i paused, i thought<br>
+                           nowhere<br>
+                           i said
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+							<p>
+							<h3>untitled</h3>
+                           only if you turn on your light<br>
+                           will you realise<br>
+                           there was darkness inside
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                  <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>should i think?</h2>
+                           seems nothing.<br>
+                           it means.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>should i think?</h2>
+                           seems.<br>
+                           nothing it means.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>should i think?</h2>
+
+                           no.
+
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>untitled</h2>
+
+                           yea<br>
+                           right<br>
+                           i know<br>
+                           shut the fuck up<br><br>
+                           there are million ways to die<br>
+                           but only one way to live<br>
+                           happy
+
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>dollar for a poem</h2>
+
+                           i am in this train station<br>
+                           with a pen<br>
+                           and some words scribbled on my palm<br><br>
+                           they don't rhyme<br>
+                           it's not a poetry nor a story<br><br>
+                           i am in this train station<br>
+                           holding your hand<br>
+                           and your palm imprints a heart into mine<br><br>
+                           you say, let me see your palm lines<br>
+                           they are incomplete, my love, i say<br>
+                           i am scribbling some of yours into mine<br><br>
+                           you hide your eyes<br>
+                           i smile<br>
+                           i scribble a line
+
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>when i called</h2>
+
+                           that's it<br>
+                           no more do i need to see, hear, or breath<br><br>
+                           this body sank, the bottom it hit<br>
+                           lying freely<br>
+                           i said<br>
+                           this is how<br>
+                           now on<br>
+                           i will live
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>when you called</h2>
+
+                          floated up<br>
+                           i gasped some air<br><br>
+                           after a while<br>
+                           i realised<br>
+                           i was underwater<br>
+                           suffocating<br>
+                           all these years
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="carousel-content">
+                        <div>
+
+							<p>
+							<h2>when you called</h2>
+                        water has evaporated<br>
+                           things are normal
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controls --> <a class="left carousel-control" href="#text-carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+ <a class="right carousel-control" href="#text-carousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+</div>
+
+</body>
+</html>
+<script>
+$("#nav ul.nav li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 300, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+</script>

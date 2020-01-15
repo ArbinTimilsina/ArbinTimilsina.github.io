@@ -143,7 +143,7 @@ figure figcaption {
   }
 
 /*footer*/
-  a.linkedin, a.github, a.twitter {
+  a.linkedin, a.github, a.twitter a.instagram{
   	color: #00a0dc;
   }
   a.linkedin:hover {
@@ -153,6 +153,9 @@ figure figcaption {
     color: #000000;
   }
   a.twitter:hover {
+  	color: #000000;
+  }
+  a.instagram:hover {
   	color: #000000;
   }
 

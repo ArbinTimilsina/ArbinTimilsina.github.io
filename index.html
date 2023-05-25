@@ -1,287 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Arbin Timilsina</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="gif-player.js"></script>
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128366559-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<head>
+  <title>Arbin Timilsina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="gif-player.js"></script>
 
-        gtag('config', 'UA-128366559-1');
-      </script>
-   </head>
-   <!-- The scrollable area -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128366559-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-128366559-1');
+  </script>
+</head>
+<!-- The scrollable area -->
 <style>
-  #intro, #projects {padding: 5px 0px; }
+  #intro,
+  #projects {
+    padding: 5px 0px;
+  }
+
   .carousel-content {
-    color:black;
-    display:flex;
-    align-items:center;
-}
+    color: black;
+    display: flex;
+    align-items: center;
+  }
 
-#text-carousel {
-  width: 100%;
-  height: 500px;
-  vertical-align:middle;
-  padding: 50px;
-}
-.row {margin:}
-a#personalLink { text-decoration:none; color: grey; font-family: -webkit-body;}
-a#personalLink:hover { text-decoration:none; color:black!important; }
+  #text-carousel {
+    width: 100%;
+    height: 500px;
+    vertical-align: middle;
+    padding: 50px;
+  }
 
-.gif-player .canvas {
-  box-shadow: 0px 1px 3px #888;
-  margin-bottom: 10px;
-  border: 10px solid white;
-}
-.gif-player .canvas img {
-  display: block;
-}
-.gif-ctrl {
-  margin: 0 auto;
-  width: 34px;
-  height: 33px;
-  background-image: url('images/buttons.png');
-  cursor: pointer;
-}
-/*
+  .row {
+    margin:
+  }
+
+  a#personalLink {
+    text-decoration: none;
+    color: grey;
+    font-family: -webkit-body;
+  }
+
+  a#personalLink:hover {
+    text-decoration: none;
+    color: black !important;
+  }
+
+  .gif-player .canvas {
+    box-shadow: 0px 1px 3px #888;
+    margin-bottom: 10px;
+    border: 10px solid white;
+  }
+
+  .gif-player .canvas img {
+    display: block;
+  }
+
+  .gif-ctrl {
+    margin: 0 auto;
+    width: 34px;
+    height: 33px;
+    background-image: url('images/buttons.png');
+    cursor: pointer;
+  }
+
+  /*
  *	"Empty" state, show "load" button
  */
-.gif-player-e .gif-ctrl       { background-position:   0px 0px }
-.gif-player-e .gif-ctrl:hover { background-position: -34px 0px }
-/*
+  .gif-player-e .gif-ctrl {
+    background-position: 0px 0px
+  }
+
+  .gif-player-e .gif-ctrl:hover {
+    background-position: -34px 0px
+  }
+
+  /*
  *	"Loading" state, show "cancel" button
  */
-.gif-player-l .gif-ctrl {
-  background-image: url('images/cancel.gif') !important;
-  background-position: 0px 0px;
-}
-.gif-player-l .gif-ctrl:hover {
-  background-image: url('images/buttons.png') !important;
-  background-position: -34px -34px;
-}
+  .gif-player-l .gif-ctrl {
+    background-image: url('images/cancel.gif') !important;
+    background-position: 0px 0px;
+  }
 
-/*
+  .gif-player-l .gif-ctrl:hover {
+    background-image: url('images/buttons.png') !important;
+    background-position: -34px -34px;
+  }
+
+  /*
  *	"Stopped" state, show "play" button
  */
-.gif-player-s .gif-ctrl       { background-position:   0px 0px }
-.gif-player-s .gif-ctrl:hover { background-position: -34px 0px }
-/*
+  .gif-player-s .gif-ctrl {
+    background-position: 0px 0px
+  }
+
+  .gif-player-s .gif-ctrl:hover {
+    background-position: -34px 0px
+  }
+
+  /*
  *	"Playing" state, show "stop" button
  */
-.gif-player-p .gif-ctrl       { background-position:   0px -68px }
-.gif-player-p .gif-ctrl:hover { background-position: -34px -68px }
+  .gif-player-p .gif-ctrl {
+    background-position: 0px -68px
+  }
 
+  .gif-player-p .gif-ctrl:hover {
+    background-position: -34px -68px
+  }
 </style>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
- <nav class="navbar navbar-default navbar-fixed-top" id="nav">
-         <div class="container">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-               <ul class="nav navbar-nav">
-                  <li><a href="#intro">Intro</a></li>
-                  <li><a href="#projects">Projects</a></li>
-               </ul>
-               <div class="pull-right"><a id="personalLink" href="personal.html" target="_blank">Personal</a></div>
-            </div>
-         </div>
-      </nav>
+  <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+  <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="pull-right"><a id="personalLink" href="personal.html" target="_blank">Personal</a></div>
+      </div>
+    </div>
+  </nav>
 
-<div id="intro">
+  <div id="intro">
     <!-- Footer -->
     <footer class="container-fluid bg-black text-center" style="padding: 20px; auto ">
-        <p>
+      <p>
         <span class="fa-stack fa-lg">
-            <a href="https://www.linkedin.com/in/ArbinTimilsina" class="linkedin" target="_blank">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x"></i>
-            </a>
+          <a href="https://www.linkedin.com/in/ArbinTimilsina" class="linkedin" target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x"></i>
+          </a>
         </span>
         <span class="fa-stack fa-lg">
-            <a href="https://twitter.com/ArbinTimilsina" class="twitter" target="_blank">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-twitter fa-stack-1x"></i>
-            </a>
+          <a href="https://twitter.com/ArbinTimilsina" class="twitter" target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x"></i>
+          </a>
         </span>
         <span class="fa-stack fa-lg">
-            <a href="https://github.com/ArbinTimilsina" class="github"  target="_blank">
-                <i class="fa fa-square-o fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-            </a>
+          <a href="https://github.com/ArbinTimilsina" class="github" target="_blank">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x"></i>
+          </a>
         </span>
-        </p>
+      </p>
     </footer>
 
     <div class="container" style="margin-bottom:100px;">
 
-  <div class="row">
-   	<div class="col-sm-12">
-      <img src="Include/Research/Arbin.png" class="img-responsive" style="width:65%; margin:auto; padding: 10px 0; margin-bottom:0.75cm" alt="Arbin">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="Include/Research/Timilsina_Arbin_BW.jpeg" class="img-responsive"
+            style="width:35%; margin:auto; padding: 10px 0; margin-bottom:0.75cm" alt="Arbin">
 
-      <p>
-      <strong>I am a Senior Natural Language Processing (NLP) Data Scientist at <a href="https://www.reptrak.com/" target="_blank">The RepTrak Company</a>. </strong>
-      </p>
-      <p>      
-	Before that, I was a Research Scientist at <a href="https://luminoso.com/" target="_blank">Luminoso Technologies, Inc</a>, where the focus of my research was Neural Machine Translation (NMT).	
-      </p>
-
-      <p>
-	Even before that, I was a Postdoctoral Research Associate at <a href="https://www.bnl.gov/world/" target="_blank">Brookhaven National Laboratory (BNL)</a>, where I participated in the activities of the Electronic Detector Group (EDG) in the Physics Department as an active member of three large, leading-edge, international experiments; DUNE, SBND, and ICARUS.
-      </p>
-
-      <p>
-      I received my B.S. degree in Physics from Minnesota State University, Mankato and a Ph.D. degree in Nuclear Physics from Iowa State University.
-
-      My graduate research work focused on studying Quantum Chromodynamics (QCD) through matter under extreme conditions using the PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) at BNL. My Ph.D. research work has been awarded Research Excellence Award by Iowa State University in recognition of the outstanding research accomplishment in a graduate program, and my Ph.D. dissertation has been awarded the RHIC and AGS Thesis Award in recognization of the most outstanding thesis related to research conducted at BNL's facilities.
-      </p>
-
-      <p>
-         <strong>You can find my dissertation <a href="https://lib.dr.iastate.edu/etd/15170/" target="_blank">here</a>.</strong>
-      </p>
-      <p> <strong>You can find the list of my publications and citations summary on
-      <a href="https://inspirehep.net/author/profile/A.Timilsina.1" target="_blank">INSPIRE</a>.</strong>
-      </p>
- </div>
-</div>
-
-<div id="projects">
-    <h2>Machine Learning Projects</h2>
-
-    <div class="row">
-      <div class="col-sm-12">
-
-        <h3><a href="https://jerry-says.appspot.com" target="_blank">
-            Let Jerry Seinfeld finish an incomplete sentence</a> </h3>
           <p>
-          <ul>
-  	      <li> GPT-2 is fine-tuned on dialogues of Jerry Seinfeld from 9 seasons of Seinfeld scripts using PyTorch and
-              Huggingface's Transformers; code is
-              <a href="https://github.com/ArbinTimilsina/JerryCompletes" target="_blank">here</a>.</li>
-          <li>The trained model is deployed in Google Cloud Platform; code is
-              <a href="https://github.com/ArbinTimilsina/DeployJerry" target="_blank">here</a>.</li>
-  	        </ul>
+            <strong>I am a Senior Natural Language Processing (NLP) Data Scientist at <a href="https://www.reptrak.com/"
+                target="_blank">The RepTrak Company</a>. </strong>
+          </p>
+          <p>
+            Before that, I was a Research Scientist at <a href="https://luminoso.com/" target="_blank">Luminoso
+              Technologies, Inc</a>, where the focus of my research was Neural Machine Translation (NMT).
           </p>
 
-        <h3 align="center"> Try it here: <a href="https://jerry-says.appspot.com" target="_blank" style="color:darkred">jerry-says.appspot.com</a></h3>
+          <p>
+            Even before that, I was a Postdoctoral Research Associate at <a href="https://www.bnl.gov/world/"
+              target="_blank">Brookhaven National Laboratory (BNL)</a>, where I participated in the activities of the
+            Electronic Detector Group (EDG) in the Physics Department as an active member of three large, leading-edge,
+            international experiments; DUNE, SBND, and ICARUS.
+          </p>
 
-        <img src="Include/Projects/Jerry.png" class="img-responsive" style="width:70%;margin:auto;padding:10px" alt="Arbin">
+          <p>
+            <strong>I am the creator of <a href="https://www.socialsignals.info/" target="_blank">socialsignals.info</a></strong>
+          </p>
+          <p>
+            I received my B.S. degree in Physics from Minnesota State University, Mankato and a Ph.D. degree in Nuclear
+            Physics from Iowa State University.
 
+            My graduate research work focused on studying Quantum Chromodynamics (QCD) through matter under extreme
+            conditions using the PHENIX experiment at the Relativistic Heavy Ion Collider (RHIC) at BNL. My Ph.D.
+            research work has been awarded Research Excellence Award by Iowa State University in recognition of the
+            outstanding research accomplishment in a graduate program, and my Ph.D. dissertation has been awarded the
+            RHIC and AGS Thesis Award in recognization of the most outstanding thesis related to research conducted at
+            BNL's facilities.
+          </p>
+
+          <p>
+            <strong>You can find my dissertation <a href="https://lib.dr.iastate.edu/etd/15170/"
+                target="_blank">here</a>.</strong>
+          </p>
+          <p> <strong>You can find the list of my publications and citations summary on
+              <a href="https://inspirehep.net/author/profile/A.Timilsina.1" target="_blank">INSPIRE</a>.</strong>
+          </p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-sm-12">
+      <div id="projects">
+        <h2>Old Machine Learning Projects</h2>
 
-        <h3><a href="https://github.com/ArbinTimilsina/DeepLearningWithProtoDUNE" target="_blank">Particle Class Separation:</a> </h3>
+        <div class="row">
+          <div class="col-sm-12">
 
-        <p>
-          <ul>
-  	      <li> Semantic segmentation (pixel-wise classification) network to perform cosmic ray and beam particle separation in prototype DUNE detector.</li>
-  	      <li> The network achieved Intersection-Over-Union (IOU) of 0.94, averaged over three classes.</li>
-  	    </ul>
-        </p>
+            <h3><a href="https://jerry-says.appspot.com" target="_blank">
+                Let Jerry Seinfeld finish an incomplete sentence</a> </h3>
+            <p>
+            <ul>
+              <li> GPT-2 is fine-tuned on dialogues of Jerry Seinfeld from 9 seasons of Seinfeld scripts using PyTorch
+                and
+                Huggingface's Transformers; code is
+                <a href="https://github.com/ArbinTimilsina/JerryCompletes" target="_blank">here</a>.
+              </li>
+              <li>The trained model is deployed in Google Cloud Platform; code is
+                <a href="https://github.com/ArbinTimilsina/DeployJerry" target="_blank">here</a>.
+              </li>
+            </ul>
+            </p>
 
-        <div class=gif-player>
-          <div class=canvas>
-            <img class="gif-still" class="img-responsive" style="width:100%" alt="Arbin" src="Include/Projects/First.png">
-            <img class="gif-movie" class="img-responsive" style="width:100%" alt="Arbin" gif="Include/Projects/History.gif">
+            <h3 align="center"> Try it here: <a href="https://jerry-says.appspot.com" target="_blank"
+                style="color:darkred">jerry-says.appspot.com</a></h3>
+
+            <img src="Include/Projects/Jerry.png" class="img-responsive" style="width:70%;margin:auto;padding:10px"
+              alt="Arbin">
+
           </div>
-          <div class=gif-ctrl></div>
-            <h4 align="center"> Press the play button to see model's prediction improve over training time.</h4>
         </div>
 
+        <div class="row">
+          <div class="col-sm-12">
+
+            <h3><a href="https://github.com/ArbinTimilsina/DeepLearningWithProtoDUNE" target="_blank">Particle Class
+                Separation:</a> </h3>
+
+            <p>
+            <ul>
+              <li> Semantic segmentation (pixel-wise classification) network to perform cosmic ray and beam particle
+                separation in prototype DUNE detector.</li>
+              <li> The network achieved Intersection-Over-Union (IOU) of 0.94, averaged over three classes.</li>
+            </ul>
+            </p>
+
+            <div class=gif-player>
+              <div class=canvas>
+                <img class="gif-still" class="img-responsive" style="width:100%" alt="Arbin"
+                  src="Include/Projects/First.png">
+                <img class="gif-movie" class="img-responsive" style="width:100%" alt="Arbin"
+                  gif="Include/Projects/History.gif">
+              </div>
+              <div class=gif-ctrl></div>
+              <h4 align="center"> Press the play button to see model's prediction improve over training time.</h4>
+            </div>
+
+
+          </div>
+        </div>
 
       </div>
     </div>
 
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="container-fluid bg-black text-center" style="padding: 20px; auto ">
-    <p>
-    <span class="fa-stack fa-lg">
-        <a href="https://www.linkedin.com/in/ArbinTimilsina" class="linkedin" target="_blank">
+    <!-- Footer -->
+    <footer class="container-fluid bg-black text-center" style="padding: 20px; auto ">
+      <p>
+        <span class="fa-stack fa-lg">
+          <a href="https://www.linkedin.com/in/ArbinTimilsina" class="linkedin" target="_blank">
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-linkedin fa-stack-1x"></i>
-        </a>
-    </span>
-    <span class="fa-stack fa-lg">
-        <a href="https://twitter.com/ArbinTimilsina" class="twitter" target="_blank">
-            <i class="fa fa-square-o fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x"></i>
-        </a>
-    </span>
-    <span class="fa-stack fa-lg">
-        <a href="https://github.com/ArbinTimilsina" class="github"  target="_blank">
+          </a>
+        </span>
+        <span class="fa-stack fa-lg">
+          <a href="https://github.com/ArbinTimilsina" class="github" target="_blank">
             <i class="fa fa-square-o fa-stack-2x"></i>
             <i class="fa fa-github fa-stack-1x"></i>
-        </a>
-    </span>
-    </p>
-</footer>
+          </a>
+        </span>
+      </p>
+    </footer>
 
 </body>
+
 </html>
 <script>
-$("#nav ul.nav li a[href^='#']").on('click', function(e) {
+  $("#nav ul.nav li a[href^='#']").on('click', function (e) {
 
-   // prevent default anchor click behavior
-   e.preventDefault();
+    // prevent default anchor click behavior
+    e.preventDefault();
 
-   // store hash
-   var hash = this.hash;
+    // store hash
+    var hash = this.hash;
 
-   // animate
-   $('html, body').animate({
-       scrollTop: $(hash).offset().top
-     }, 300, function(){
+    // animate
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 300, function () {
 
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
-     });
+      // when done, add hash to url
+      // (default click behaviour)
+      window.location.hash = hash;
+    });
 
-});
-
-$(document).ready( function(){
-  /* preload the spinner */
-  var i = new Image;
-  i.src = 'images/cancel.gif';
-  /* instantiate player(s) */
-  $('.gif-player').each(function(){
-    function swapWithFade(i1,i2,done) {
-      i1.fadeOut('fast', function(){
-        i2.fadeIn('fast',done);
-      });
-    }
-
-    var self = $(this);
-    this.gp = new gifPlayer(self, {
-      play: swapWithFade,
-      stop: swapWithFade });
   });
-});
+
+  $(document).ready(function () {
+    /* preload the spinner */
+    var i = new Image;
+    i.src = 'images/cancel.gif';
+    /* instantiate player(s) */
+    $('.gif-player').each(function () {
+      function swapWithFade(i1, i2, done) {
+        i1.fadeOut('fast', function () {
+          i2.fadeIn('fast', done);
+        });
+      }
+
+      var self = $(this);
+      this.gp = new gifPlayer(self, {
+        play: swapWithFade,
+        stop: swapWithFade
+      });
+    });
+  });
 </script>
